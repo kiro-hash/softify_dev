@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');    
+*{
+    font-family: "Tektur", sans-serif;
+}
+.conta{
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    z-index: 1000;
+
+    transform: translate(-40%, 30px);
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin: 20px;
+    width: 600px;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* left side */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* links */
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.l {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+/* hover effect */
+.l:hover {
+    background: linear-gradient(45deg, #5f5fff, #9d7bff);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(100,100,255,0.4);
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}

@@ -1,0 +1,42 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 80vh;
+    width: 220px;
+
+    background: linear-gradient(#111, #222);
+    padding: 20px;
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* logo */
+.logo {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* items */
+.item {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+/* hover effect */
+.item:hover {
+    background: linear-gradient(45deg, #5f5fff, #9d7bff);
+    transform: translateX(5px);
+}
