@@ -81,7 +81,7 @@ const Home = () => {
         className="card" 
         variants={itemVariant}
         key={index}
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.06 }}
       >
         <h3>{service.title}</h3>
         <p>{service.desc}</p>
