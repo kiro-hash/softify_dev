@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './NavigationBar.css'
-import logo from '../assets/Futuristic glowing _S_ logo design.png'
 
 const NavigationBar = () => {
   return (

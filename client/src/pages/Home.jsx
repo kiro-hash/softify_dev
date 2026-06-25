@@ -42,7 +42,8 @@ const Home = () => {
   return (
     <>
       <NavigationBar />
-
+      <Menu/>
+      
       {/* HERO */}
       <div className="hero">
         <motion.div 
@@ -81,7 +82,7 @@ const Home = () => {
         className="card" 
         variants={itemVariant}
         key={index}
-        whileHover={{ scale: 1.06 }}
+        whileHover={{ scale: 1.05 }}
       >
         <h3>{service.title}</h3>
         <p>{service.desc}</p>

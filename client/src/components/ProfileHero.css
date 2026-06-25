@@ -1,0 +1,34 @@
+.cardP{
+    border-radius: 50%;
+    width: fit-content;
+    background-color: #c0abff;
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-30px);
+    animation: FadeIn 1s forwards;
+}
+.cardP:hover{
+    box-shadow: 0px 5px 20px #c0abff;
+    opacity: 0.7;
+}
+.cardP img{
+    width: 150px;
+}
+.desc p{
+    opacity: 0.5;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@keyframes FadeIn {
+    to{
+        transform: translateX(30px);
+        opacity: 1;
+    }
+}
